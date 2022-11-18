@@ -1,0 +1,56 @@
+head, body{
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+.cabecalho{
+    color: white;
+    background-image: url(../Imagens/Ilha_palmeiras.synth.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+.lista-navbar-MP{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+  
+.lista-ul-navbar-MP{
+    float: left;
+}
+  
+.lista-ul-navbar-MP .link-ul-navbar-MP{
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.lista-ul-navbar-MP .link-ul-navbar-MP:hover{
+    background-color: #111;
+}
+
+.blocos-flex{
+    display: grid;
+    grid-template-columns: 50% auto auto;
+    grid-template-rows: 50px 150px;
+    gap: 10px;
+    padding: 10px;
+    background-color: purple;
+}
+
+.blocos-flex > div{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.titulo-div-projeto{
+    color: white;
+    background-color: black;
+}
