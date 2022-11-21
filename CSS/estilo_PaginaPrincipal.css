@@ -99,6 +99,8 @@ legend{
 /*PROJETOS*/
 #blocos-projeto{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
