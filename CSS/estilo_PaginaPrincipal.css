@@ -2,7 +2,7 @@
 body{
     font-family: Share Tech Mono, 'Times New Roman', Times, serif;
     color: lightgray;
-    background-image: url(https://gaapp.co.uk/wp-content/uploads/2017/01/dark-background.jpg);
+    background-image: url(../Imagens/dark_background.jpg);
     background-size: 100%;
 }
 
@@ -201,7 +201,7 @@ button{
 }
 
 #iframe-embreve{
-    background-image: url(https://i.gifer.com/origin/61/6105a3d2805b9503a9e37a44917efe4a_w200.gif);
+    background-image: url(../Imagens/matrix_gif.gif);
 }
 
 .botao-div{
