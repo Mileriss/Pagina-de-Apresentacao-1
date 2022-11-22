@@ -29,8 +29,8 @@
             <ul class="lista-navbar-MP">
                 <li class="lista-ul-navbar-MP"><a class="link-ul-navbar-MP" href="#perfil">Perfil</a></li>
                 <li class="lista-ul-navbar-MP"><a class="link-ul-navbar-MP" href="#projetos">Projetos</a></li>
-                <li class="lista-ul-navbar-MP"><a class="link-ul-navbar-MP" href="#consideracoes-finais">Considerações finais</a></li>
-                <li class="lista-ul-navbar-MP"><a class="link-ul-navbar-MP" href="#contato">Contato</a></li>
+                <li class="lista-ul-navbar-MP"><a class="link-ul-navbar-MP" href="#bloco-consideracoesFinais">Considerações finais</a></li>
+                <li class="lista-ul-navbar-MP"><a class="link-ul-navbar-MP" href="#bloco-contato">Contato</a></li>
                 <li class="lista-ul-navbar-MP"><a class="link-ul-navbar-MP" href="#">Curriculo</a></li>
             </ul>
         </div>
@@ -47,9 +47,32 @@
                 <p>Este bloco vai conter a descrição do meu perfil</p>
             </div>
             <div id="bloco-objetivosHabilidades">
-                <h2>Objetivos e Habilidades</h2>
+                <h2>Objetivos</h2>
                 <p>Este bloco  vai conter um resumo dos meus objetivos e habilidades</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fuga doloribus molestiae laudantium ab pariatur fugit perferendis tenetur dicta non repudiandae dolorum nostrum nulla, neque voluptates! Illum architecto deleniti quia!</p>
+
+                <hr>
+
+                <h2>Habilidades</h2>
+
+                <span id="intermediario">Intermediário:</span>
+                <img src="../Icones/logo_excel.svg" alt="Habilidade Python" class="img-descricaoPessoal">
+                <img src="../Icones/logo_word.svg" alt="Habilidade Html" class="img-descricaoPessoal">
+                <img src="../Icones/logo_powerpoint.svg" alt="Habilidade Css" class="img-descricaoPessoal">
+
+                <br><br>
+
+                <span id="basico">Básico:</span>
+                <img src="../Icones/logo_python.svg" alt="Habilidade Python" class="img-descricaoPessoal">
+                <img src="../Icones/logo_pandas.svg" alt="Habilidade Sql" class="img-descricaoPessoal">
+                <img src="../Icones/logo_html.svg" alt="Habilidade Html" class="img-descricaoPessoal">
+                <img src="../Icones/logo_css.svg" alt="Habilidade Css" class="img-descricaoPessoal">
+                <img src="../Icones/logo_mysql.svg" alt="Habilidade Sql" class="img-descricaoPessoal">
+                <img src="https://img.icons8.com/color/344/power-bi.png" alt="Habilidade Sql" class="img-descricaoPessoal">
+
+
             </div>
+
             <div id="bloco-pixelart">
                 <h2>Gif em Pixel-Art</h2>
                 <p>Neste bloco eu vou criar e colocar uma img de perfil em pixel-art</p>
@@ -64,90 +87,123 @@
     <!--BLOCO DOS PROJETOS-->
     <fieldset id="projetos" class="bordas-blocos">
         <legend>Projetos</legend>
+
+        <!--1, 2 e 3-->
         <div class="blocos" id="blocos-projeto">
-            <fieldset class="bordas-projetos">
-                <div id="blocos-projeto1">
-                    <h1 class="titulo-bloco-projeto">Nome do projeto</h1>
-                    <!--<img src="../Imagens/lua_synth_2.jpg" id="img-projeto1">-->
-                    <iframe src="pagina_codigo_projeto.html" title="Lista de Itens" name="iframe-projeto1" class="tamanho-iframe">Projeto - Lista de Itens</iframe>
-                    <fieldset class="blocos-descricoes">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo iusto odio soluta laboriosam temporibus dolorum. Inventore dolores commodi error repellat nobis voluptates ex. Quis natus rem explicabo accusantium corporis?</p>
-                        <button class="botao-div"><a href="#">Clique aqui para ver o código!</a></button>
-                    </fieldset>
-                </div>
-            </fieldset>
-            <fieldset class="bordas-projetos">
-                <div id="blocos-projeto2">
-                    <h1 class="titulo-bloco-projeto">Projeto - Nome do projeto</h1>
-                    <!--<img src="../Imagens/cidade_iluminada_synth.jpg" id="img-projeto2">-->
-                    <iframe src="pagina_codigo_projeto.html" title="Lista de Itens" name="iframe-projeto1" class="tamanho-iframe">Projeto - Lista de Itens</iframe>
-                    
-                    <fieldset class="blocos-descricoes">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo iusto odio soluta laboriosam temporibus dolorum. Inventore dolores commodi error repellat nobis voluptates ex. Quis natus rem explicabo accusantium corporis?</p>
-                        <button class="botao-div"><a href="pagina_codigo_projeto.html">Clique aqui para ver o código!</a></button>
-                    </fieldset>
-                </div>
-            </fieldset>
+            <div id="blocos-projeto1">
+                <h1 class="titulo-bloco-projeto">Adivinhe o numero</h1>
+                <!--<img src="../Imagens/lua_synth_2.jpg" id="img-projeto1">-->
+                <iframe src="../HTML/projetos/Adivinhe_numero.html" title="Adivinhe o numero" name="iframe-projeto1" class="tamanho-iframe">Projeto - Adivinhe o numero!</iframe>
+                <fieldset class="blocos-descricoes">
+                    <span id="formatacao-palavraDescricao">Descrição:</span>
+                    <p>Aplicação que roda diretamente no Terminal de forma interativa onde o usuário 
+                        precisa adivinhar um numero sorteado aleatoriamente entre 0 e 50.</p>
+                    <button class="botao-div"><a href="#">Código</a></button>
+                </fieldset>
+            </div>
+
+            <div id="blocos-projeto2">
+                <h1 class="titulo-bloco-projeto">Calculadora</h1>
+                <!--<img src="../Imagens/cidade_iluminada_synth.jpg" id="img-projeto2">-->
+                <iframe src="../HTML/projetos/Calculadora.html" title="Calculadora" name="iframe-projeto1" class="tamanho-iframe">Projeto - Calculadora</iframe>
+                
+                <fieldset class="blocos-descricoes">
+                    <span id="formatacao-palavraDescricao">Descrição:</span>
+                    <p>Aplicação para realizar operações básicas de uma calculadora (Soma, Subtração, Multiplicação e Divisão) diretamente no terminal.</p>
+                    <button class="botao-div"><a href="pagina_codigo_projeto.html">Código</a></button>
+                </fieldset>
+            </div>
+
+            <div id="blocos-projeto3">
+                <h1 class="titulo-bloco-projeto">Lista de itens</h1>
+                <!--<img src="../Imagens/lua_synth_2.jpg" id="img-projeto1">-->
+                <iframe src="../HTML/projetos/Lista_de_itens.html" title="Lista de itens" name="iframe-projeto1" class="tamanho-iframe">Projeto - Lista de itens</iframe>
+                <fieldset class="blocos-descricoes">
+                    <span id="formatacao-palavraDescricao">Descrição:</span>
+                    <p>Aplicação que permite manipular diretamente pelo terminal uma lista de itens.
+                        É possível: Adicionar, Visualizar e Remover itens.</p>
+                    <button class="botao-div"><a href="#">Código</a></button>
+                </fieldset>
+            </div>
+            
         </div>
+        
+
+        <!--4, 5 e 6-->
 
         <div class="blocos" id="blocos-projeto">
-            <fieldset class="bordas-projetos">
-                <div id="blocos-projeto3">
-                    <h1 class="titulo-bloco-projeto">Projeto - Nome do projeto</h1>
-                    <img src="../Imagens/Ilha_palmeiras.synth.jpg" id="img-projeto3">
-                    <fieldset class="blocos-descricoes">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam eaque beatae repudiandae repellendus eveniet, iusto architecto tempore laudantium dicta, quas error natus aut voluptatem dolorem sint adipisci obcaecati unde saepe?</p>
-                        <button class="botao-div"><a href="#">Clique aqui para ver o código!</a></button>
-                    </fieldset>
-                </div>
-            </fieldset>
             <fieldset class="bordas-projetos">
                 <div id="blocos-projeto4">
-                    <h1 class="titulo-bloco-projeto">Projeto - Nome do projeto</h1>
-                    <img src="../Imagens/planeta_roxo_synth.jpg" id="img-projeto4">
+                    <h1 class="titulo-bloco-projeto">Nota escolar</h1>
+                    <!--<img src="../Imagens/cidade_iluminada_synth.jpg" id="img-projeto2">-->
+                    <iframe src="../HTML/projetos/Nota_escolar.html" title="Nota escolar" name="iframe-projeto1" class="tamanho-iframe">Projeto - Nota escolar</iframe>
+                    
                     <fieldset class="blocos-descricoes">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo iusto odio soluta laboriosam temporibus dolorum. Inventore dolores commodi error repellat nobis voluptates ex. Quis natus rem explicabo accusantium corporis?</p>
-                        <button class="botao-div"><a href="#">Clique aqui para ver o código!</a></button>
+                        <span id="formatacao-palavraDescricao">Descrição:</span>
+                        <p>Aplicação que permite verificar a média escolar de uma matéria diretamente pelo terminal.</p>
+                        <button class="botao-div"><a href="pagina_codigo_projeto.html">Código</a></button>
+                    </fieldset>
+                </div>
+            </fieldset>
+            <fieldset class="bordas-projetos">
+                <div id="blocos-projeto5">
+                    <h1 class="titulo-bloco-projeto">Pedra, papel e tesoura</h1>
+                    <!--<img src="../Imagens/lua_synth_2.jpg" id="img-projeto1">-->
+                    <iframe src="../HTML/projetos/Pedra_papel_tesoura.html" title="Pedra, papel e tesoura" name="iframe-projeto1" class="tamanho-iframe">Projeto - Pedra, papel e tesoura</iframe>
+                    <fieldset class="blocos-descricoes">
+                        <span id="formatacao-palavraDescricao">Descrição:</span>
+                        <p>Aplicação para simular um jogo de "Pedra, Papel e Tesoura" diretamente no terminal.</p>
+                        <button class="botao-div"><a href="">Código</a></button>
+                    </fieldset>
+                </div>
+            </fieldset>
+            <fieldset class="bordas-projetos">
+                <div id="blocos-projeto6">
+                    <h1 class="titulo-bloco-projeto">Em breve...</h1>
+                    <!--<img src="../Imagens/cidade_iluminada_synth.jpg" id="img-projeto2">-->
+                    <iframe src="" title="" name="iframe-projeto1" class="tamanho-iframe" id="iframe-embreve">Em breve...</iframe>
+                    
+                    <fieldset class="blocos-descricoes">
+                        <p>Em breve...</p>
                     </fieldset>
                 </div>
             </fieldset>
         </div>
-    </fieldset>
-
-    <br><br><br>
+        </fieldset>
+    
+        <br><br><br>
 
     <!--CONSIDERAÇÕES FINAIS DO PORTFÓLIO-->
     <article>
-        <fieldset id="consideracoes-finais" class="bordas-blocos">
-            <legend>Considerações Finais</legend>
-            <div class="blocos" id="bloco-consideracoesFinais">
-                <fieldset class="blocos-descricoes">
-                    <p>Este será o local onde vai conter todas as considerações finais do portfólio</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur consequuntur accusantium. Pariatur temporibus nihil ut illum cumque, ab numquam beatae dolore eligendi repellat, id, animi impedit deserunt. Eveniet, optio!</p>
-                    <p>lorem</p>
-                </fieldset>
-            </div>
-        </fieldset>
+        <div class="blocos" id="bloco-consideracoesFinais">
+            <fieldset class="descricao-consideracoesFinais">
+                <legend>Considerações Finais</legend>
+                <p>Este será o local onde vai conter todas as considerações finais do portfólio</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur consequuntur accusantium. Pariatur temporibus nihil ut illum cumque, ab numquam beatae dolore eligendi repellat, id, animi impedit deserunt. Eveniet, optio!</p>
+                <p>lorem</p>
+            </fieldset>
+        </div>
     </article>
 
-    <br><br><br>
+    <br>
 
     <!--BLOCO DE CONTATO-->
     <footer>
-        <fieldset id="contato" class="bordas-blocos">
-            <legend>Contato</legend>
-            <div class="blocos" id="bloco-contato">
-                <fieldset class="blocos-descricoes">
-                    <h2>Entre em contato</h2>
-                    <p>Logo abaixo vão conter os meios para entrar em contato comigo, seja para uma conversa, emprego, serviços ou troca de experiências!</p>
-                    <address>
-                        <a href="https://linkedin.com/in/rafael-mileris-a808b7239" target="_blank"><img src="../Icones/logo_linkedin.svg" alt="icone da rede social Linkedin" class="tamanho-img-contato blocos-img-contato"></a>
-                        <a href="https://github.com/Mileriss" target="_blank"><img src="../Icones/logo_github.svg" alt="icone da rede social github" class="tamanho-img-contato"></a>
-                        <a href="mailto:rafaelmileris15@gmail.com"><img src="../Icones/logo_gmail_colorido.svg" alt="icone da rede social gmail" class="tamanho-img-contato"></a>
-                    </address>
-                </fieldset>
-            </div>
-        </fieldset>
+        <div class="blocos" id="bloco-contato">
+            <fieldset class="descricao-contato">
+                <legend>Contato</legend>
+                <h2>Entre em contato</h2>
+                    <p>
+                        Logo abaixo vão conter os meios para entrar em contato comigo, <br> 
+                        seja para uma conversa, emprego, serviços ou troca de experiências!
+                    </p>
+                <address>
+                    <a href="https://linkedin.com/in/rafael-mileris-a808b7239" target="_blank"><img src="../Icones/logo_linkedin.svg" alt="icone da rede social Linkedin" class="tamanho-img-contato blocos-img-contato"></a>
+                    <a href="https://github.com/Mileriss" target="_blank"><img src="../Icones/logo_github.svg" alt="icone da rede social github" class="tamanho-img-contato"></a>
+                    <a href="mailto:rafaelmileris15@gmail.com"><img src="../Icones/logo_gmail_colorido.svg" alt="icone da rede social gmail" class="tamanho-img-contato"></a>
+                </address>
+            </fieldset>
+        </div>
     </footer>
 
 </body>
