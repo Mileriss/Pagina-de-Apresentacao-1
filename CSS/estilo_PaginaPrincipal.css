@@ -1,15 +1,37 @@
 /*FORMATAÇÃO EM TODA A PÁGINA*/
 body{
     font-family: Share Tech Mono, 'Times New Roman', Times, serif;
-    color: white;
-    background-image: url(../Imagens/matrix.jpg);
+    color: lightgray;
+    background-image: url(https://gaapp.co.uk/wp-content/uploads/2017/01/dark-background.jpg);
     background-size: 100%;
 }
 
-h1, h2, button{
+h1, h2, #intermediario, #basico{
     font-family: VT323, 'Times New Roman', Times, serif;
     color: lightblue;
 }
+
+legend{
+    font-family: VT323, 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    border: 2px solid green;
+    border-radius: 1em;
+    transition: 2s;
+}
+
+a:hover{
+    transition: 0.3s;
+}
+
+button{
+    font-family: Share Tech Mono, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: white;
+}
+
 
 /*FORMATAÇÃO PADRÃO TODOS OS BLOCOS*/
 .blocos{
@@ -18,6 +40,7 @@ h1, h2, button{
     grid-template-rows: 50px 150px;
     gap: 10px;
     padding: 10px;
+    transition: 1.5s;
 }
 
 .blocos > div{
@@ -37,17 +60,17 @@ h1, h2, button{
     padding-left: 0.75em;
     padding-right: 0.75em;
     border: 5px groove;
-    border-color: lightslategrey;
+    border-color: rgba(255, 255, 255, 0.596);
 }
 
 .blocos-descricoes{
-    background-color: black;
+    width: 18.3em;
+    border: 2px solid white;
+    background-color: rgba(119, 136, 153, 0.363);
 }
 
-legend{
-    color: white;
-    text-align: center;
-    font-size: 20px;
+.blocos-descricoes:hover{
+    color: rgb(255, 255, 255);
 }
 
 /*TITULO E DESCRIÇÃO DA PÁGINA*/
@@ -57,8 +80,7 @@ legend{
     text-align: center;
 }
 
-
-/*MENNU NAVBAR - LISTA DE OPÇÕES*/
+/*MENU NAVBAR - LISTA DE OPÇÕES*/
 .lista-navbar-MP{
     list-style-type: none;
     margin: 0;
@@ -80,8 +102,16 @@ legend{
 }
   
 .lista-ul-navbar-MP .link-ul-navbar-MP:hover{
-    background-color: #111;
+    background-color: green;
+    color: white;
+    border: 1px solid white;
 }
+
+.lista-ul-navbar-MP .link-ul-navbar-MP:active{
+    color: black;
+}
+
+
 
 /*PERFIL*/
 #blocos-perfil{
@@ -89,10 +119,55 @@ legend{
     justify-content: center;
 }
 
+#bloco-objetivosHabilidades{
+    text-align: left;
+}
+
+.img-descricaoPessoal{
+    width: 30px;
+    transition: width 0.5s;
+}
+
+.img-descricaoPessoal:hover{
+    width: 40px;
+
+}
+
+.nivel-habilidade{
+    text-align: left;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.icone-habilidade{
+    text-align: left;
+}
+
+#intermediario{
+    color: lightgreen;
+    font-size: 25px;
+}
+
+#basico{
+    color: yellow;
+    font-size: 25px;
+}
+
+
 /*PROJETOS*/
-#blocos-projeto{
+.blocos-projeto{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+}
+
+.blocos-projeto > div{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    border: 10px solid rgba(0, 0, 0, 0);
 }
 
 .bordas-projetos{
@@ -107,27 +182,54 @@ legend{
     border-color: lightsteelblue;
 }
 
-#img-projeto1{
-    width: 100%;
+.titulo-bloco-projeto{
+    color: white;
+    border: 2px solid lightblue;
+    text-align: center;
+    transition: all 0.3s;
 }
 
-#img-projeto2{
-    width: 100%;
+.titulo-bloco-projeto:hover{
+    font-size: 45px;
 }
 
-#img-projeto3{
-    width: 100%;
+.tamanho-iframe{
+    width: 20em;
+    height: 30em;
+    border: 2px solid white;
+    background-color: gray;
 }
 
-#img-projeto4{
-    width: 100%;
+#iframe-embreve{
+    background-image: url(https://i.gifer.com/origin/61/6105a3d2805b9503a9e37a44917efe4a_w200.gif);
 }
 
-/*CONSIDERAÇÕES FINAIS*/
-#bloco-consideracoesFinais{
+.botao-div{
+    text-align: center;
+    width: 4em;
+    height: 1.5em;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: width 0.5s;
+}
+
+.botao-div:hover{
+    width: 5em;
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+}
+
+/*RESUMO*/
+#bloco-resumo{
     display: flex;
     justify-content: center;
 }
+
+.descricao-resumo{
+    background-color: black;
+}
+
 
 /*CONTATO*/
 #bloco-contato{
@@ -135,15 +237,22 @@ legend{
     justify-content: center;
 }
 
-.titulo-div-projeto{
-    color: white;
+.descricao-contato{
     background-color: black;
 }
 
-.tamanho-imagem-contato{
+.tamanho-img-contato{
     width: 50px;
+    transition: width 0.5s;
+}
+
+.tamanho-img-contato:hover{
+    width: 60px;
+
 }
 
 .blocos-img-contato{
     background-color: white;
+    border-radius: 20%;
+    border-width: 2px;
 }
