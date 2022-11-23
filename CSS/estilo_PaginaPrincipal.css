@@ -2,7 +2,7 @@
 body{
     font-family: Share Tech Mono, 'Times New Roman', Times, serif;
     color: lightgray;
-    background-image: url(https://gaapp.co.uk/wp-content/uploads/2017/01/dark-background.jpg);
+    background-image: url(../Imagens/dark_background.jpg);
     background-size: 100%;
 }
 
@@ -66,6 +66,7 @@ button{
 .blocos-descricoes{
     width: 18.3em;
     border: 2px solid white;
+    border-radius: 5px;
     background-color: rgba(119, 136, 153, 0.363);
 }
 
@@ -155,11 +156,19 @@ button{
 
 
 /*PROJETOS*/
-#blocos-projeto{
+.blocos-projeto{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+}
+
+.blocos-projeto > div{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    border: 10px solid rgba(0, 0, 0, 0);
 }
 
 .bordas-projetos{
@@ -176,12 +185,19 @@ button{
 
 .titulo-bloco-projeto{
     color: white;
+    border: 2px solid lightblue;
+    border-radius: 5px;
     text-align: center;
-    transition: all 2s;
+    transition: all 0.3s;
+    background-image: url(../Icones/logo_python.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .titulo-bloco-projeto:hover{
-    font-size: px;
+    font-size: 45px;
+    background-color: black;
 }
 
 .tamanho-iframe{
@@ -192,7 +208,9 @@ button{
 }
 
 #iframe-embreve{
-    background-image: url(https://i.gifer.com/origin/61/6105a3d2805b9503a9e37a44917efe4a_w200.gif);
+    background-image: url(../Imagens/background_embreve.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .botao-div{
@@ -211,14 +229,16 @@ button{
     border: 2px solid green;
 }
 
-/*CONSIDERAÇÕES FINAIS*/
-#bloco-consideracoesFinais{
+/*RESUMO*/
+#bloco-resumo{
     display: flex;
     justify-content: center;
 }
 
-.descricao-consideracoesFinais{
+.descricao-resumo{
     background-color: black;
+    border: 2px solid lightsteelblue;
+    border-radius: 5px;
 }
 
 
@@ -230,6 +250,8 @@ button{
 
 .descricao-contato{
     background-color: black;
+    border: 2px solid lightsteelblue;
+    border-radius: 5px;
 }
 
 .tamanho-img-contato{
