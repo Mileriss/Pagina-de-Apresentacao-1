@@ -26,6 +26,7 @@ legend{
     transition: 2s;
 }
 
+
 a:hover{
     transition: 0.3s;
 }
@@ -132,6 +133,12 @@ button{
     text-align: left;
 }
 
+#eng-software{
+    font-style: italic;
+    font-weight: bold;
+    color: lightslategrey;
+}
+
 .img-objetivosHabilidades{
     width: 30px;
     transition: width 0.5s;
@@ -227,9 +234,8 @@ button{
 }
 
 #iframe-embreve{
-    background-image: url(../Imagens/background_embreve.jpg);
+    background-image: url(../Imagens/matrix_gif.gif);
     background-size: auto;
-    background-repeat: no-repeat;
 }
 
 .blocos-descricoes{
